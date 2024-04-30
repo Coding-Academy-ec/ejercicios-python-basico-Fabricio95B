@@ -6,46 +6,43 @@ if __name__ == "__main__":
 
 # 2 Escribe un programa que calcule la suma de los números del 1 al 10.
 def suma_1_al_10():
-    suma = sum(range(1, 10))  
-    print ("la suma de los numero del 1 al 10 es:", suma)
+    """Function printing python version."""
+    suma = sum(range(1, 11))
+    return suma
 if __name__ == "__main__":
-    suma = suma_1_al_10()  
+    suma_1_al_10()
 
 # 3 Crea variables para almacenar tu edad, nombre y estatura, e imprímelas en pantalla.
 def imprimir_datos_personales(nombre, edad, estatura):
-    print(nombre)
-    print(edad)
-    print(estatura) 
+    """Function printing python version."""
+    print("Nombre:", nombre)
+    print("Edad:", edad)
+    print("Estatura:", estatura)
 if __name__ == "__main__":
     # Se definen las variables con los datos personales
     nombre = "Bryam"
     edad = 29
-    estatura = 1.80
-    imprimir_datos_personales() 
-
+    estatura = 1.8
+    imprimir_datos_personales(nombre, edad, estatura)
 # 4 Escribe un programa que determine si un número ingresado por el usuario es par o impar.
-def par_o_impar(num):
-    if num % 2 == 0:
-       print (num, "Es par") 
+def par_o_impar(numero):
+    """Function printing python version."""
+    if numero % 2 == 0:
+       return "par"
     else:
-       print (num, "Es impar") 
-
+       return "impar"
 if __name__ == "__main__":
-    num = int(input("Ingrese un número: "))  
-    print(par_o_impar(8)) 
-    print(par_o_impar(5)) 
-
+    numero = int(input("Ingrese un número: "))
 # 5 Crea una función que calcule el área de un círculo dado su radio.
 import math
 
 def area_circulo(radio):
-    area = math.pi * radio ** 2 
-    return area 
+    area = math.pi * radio ** 2
+    return area
 if __name__ == "__main__":
-    radio = float(input("Ingrese el radio del círculo: "))  
+    radio = float(input("Ingrese el radio del círculo: "))
     area = area_circulo(radio)
-    print(f"El area del ciculo es: {radio} es {area:.2f}.") 
-
+    print(f"El area del ciculo es: {radio} es {area:.2f}.")
 # 6 Define una función que reciba dos números como argumentos y devuelva su suma.
 def suma(num1, num2):
     return num1 + num2 
